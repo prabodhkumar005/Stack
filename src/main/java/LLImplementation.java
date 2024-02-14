@@ -34,6 +34,12 @@ public class LLImplementation {
             head=head.next;
             return x;
         }
+        int peek(){
+            if(head==null){
+                System.out.println("stack is empty");
+                return -1;
+            }
+            return head.val;
     }
     public static void main(String[] args) {
 
