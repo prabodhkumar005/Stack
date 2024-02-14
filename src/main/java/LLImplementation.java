@@ -15,6 +15,13 @@ public class LLImplementation {
             head=temp;
             size++;
         }
+        void display(){
+            Node temp=head;
+            while(temp!=null){
+                System.out.println(temp.val+" ");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
 
