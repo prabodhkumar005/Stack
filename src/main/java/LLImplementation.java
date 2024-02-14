@@ -22,6 +22,9 @@ public class LLImplementation {
             }
             System.out.println();
         }
+        int size(){
+            return size;
+        }
     }
     public static void main(String[] args) {
 
