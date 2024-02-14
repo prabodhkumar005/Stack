@@ -17,10 +17,11 @@ public class LLImplementation {
             size++;
         }
 
-        void display() {
+        void displayRev() {
             Node temp = head;
             while (temp != null) {
                 System.out.println(temp.val + " ");
+                temp=temp.next;
             }
             System.out.println();
         }
