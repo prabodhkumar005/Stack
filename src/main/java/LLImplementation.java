@@ -21,6 +21,10 @@ public class LLImplementation {
             displayrec(h.next);
             System.out.println(h.val+" ");
         }
+        void display(){
+            displayrec(head);
+            System.out.println();
+        }
 
 
         void displayRev() {
