@@ -19,7 +19,7 @@ public class LLImplementation {
         void displayrec(Node h){
             if(h==null) return;
             displayrec(h.next);
-            System.out.println(h.val+" ");
+            System.out.print(h.val+" ");
         }
         void display(){
             displayrec(head);
@@ -30,7 +30,7 @@ public class LLImplementation {
         void displayRev() {
             Node temp = head;
             while (temp != null) {
-                System.out.println(temp.val + " ");
+                System.out.print(temp.val + " ");
                 temp=temp.next;
             }
             System.out.println();
@@ -65,7 +65,19 @@ public class LLImplementation {
         }
     }
     public static void main(String[] args) {
-
-        Stack st=new Stack();
+        LLStack stack=new LLStack();
+        stack.push(4);
+        stack.display();
+        stack.push(5);
+        stack.display();
+        stack.push(6);
+        stack.display();
+        System.out.println(stack.size());
+        stack.pop();
+        stack.display();
+        System.out.println(stack.size());
+        stack.push(7);
+        stack.push(8);
+        stack.display();
     }
 }
