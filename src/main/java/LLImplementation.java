@@ -16,6 +16,12 @@ public class LLImplementation {
             head = temp;
             size++;
         }
+        void displayrec(Node h){
+            if(h==null) return;
+            displayrec(h.next);
+            System.out.println(h.val+" ");
+        }
+
 
         void displayRev() {
             Node temp = head;
