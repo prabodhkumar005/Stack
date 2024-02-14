@@ -6,40 +6,52 @@ public class LLImplementation {
             this.val=val;
         }
     }
-    public static class LLStack{
-        Node head=null;
-        int size=0;
-        void push(int x){
-            Node temp=new Node(x);
-            temp.next=head;
-            head=temp;
+    public static class LLStack {
+        Node head = null;
+        int size = 0;
+
+        void push(int x) {
+            Node temp = new Node(x);
+            temp.next = head;
+            head = temp;
             size++;
         }
-        void display(){
-            Node temp=head;
-            while(temp!=null){
-                System.out.println(temp.val+" ");
+
+        void display() {
+            Node temp = head;
+            while (temp != null) {
+                System.out.println(temp.val + " ");
             }
             System.out.println();
         }
-        int size(){
+
+        int size() {
             return size;
         }
-        int pop(){
-            if(head==null){
+
+        int pop() {
+            if (head == null) {
                 System.out.println("stack is empty");
                 return -1;
             }
-            int x= head.val;
-            head=head.next;
+            int x = head.val;
+            head = head.next;
             return x;
         }
-        int peek(){
-            if(head==null){
+
+        int peek() {
+            if (head == null) {
                 System.out.println("stack is empty");
                 return -1;
             }
             return head.val;
+        }
+        boolean isEmpty(){
+            if(size==0){
+                return true;
+            }
+            else return false;
+        }
     }
     public static void main(String[] args) {
 
