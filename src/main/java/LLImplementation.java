@@ -25,6 +25,15 @@ public class LLImplementation {
         int size(){
             return size;
         }
+        int pop(){
+            if(head==null){
+                System.out.println("stack is empty");
+                return -1;
+            }
+            int x= head.val;
+            head=head.next;
+            return x;
+        }
     }
     public static void main(String[] args) {
 
